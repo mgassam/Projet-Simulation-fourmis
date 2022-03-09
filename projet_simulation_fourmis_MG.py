@@ -50,16 +50,16 @@ ants_dict =  {
         'y': [4, 3, 4, 5, 5, 4, 3, 4, 4, 5],
         'pv': [20, 18, 16, 14, 12, 20, 18, 20, 18, 16.0]},
     4: {
-        'x' : [12, 3, 20, 12, 9, 20, 4, 15, 6, 10],
-        'y' : [1, 5, 9, 4, 1, 8, 20, 16, 7, 2],
+        'x' : [12, 3, 20, 12, 13, 20, 19, 18, 12, 10],
+        'y' : [1, 5, 9, 4, 1, 8, 20, 16, 15, 2],
         'pv' : [20, 20, 12, 5, 12, 20, 15, 8, 12, 1]},
     5 : {
-        'x' : [1, 3, 7, 17, 17, 16, 1, 9, 15, 12],
-        'y' : [20, 20, 1, 7, 16, 15, 8, 2, 14, 4],
+        'x' : [1, 3, 7, 17, 17, 16, 8, 9, 15, 12],
+        'y' : [20, 20, 6, 7, 10, 15, 8, 5, 6, 4],
         'pv' : [15, 3, 7, 17, 20 ,13, 2, 10, 1, 9]}
     }
 # On appelle l'application visual_app du module ant_animate pour afficher le graphique en definissant le parametrage de l'affichache et la valeur énergétique
-ant_app = ant_animate.Visual_App(ants_dict, foodx, foody, pv= 20, delay= 750)
+ant_app = ant_animate.Visual_App(ants_dict, foodx, foody, pv= 20, delay= 2000)
 
 # On lance l'application ant_app.run du module ant_animate
 ant_app.run()
