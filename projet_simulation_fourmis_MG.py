@@ -11,7 +11,7 @@ import random
 mini = 1
 maxi = 20
 # nombre de points de vie
-nbcouples = 15
+nbcouples = 8
 # On definit les coord de depart des points de nourriture
 def ma_fonction(mini, maxi, nbcouples):
     coordx = []
@@ -19,7 +19,7 @@ def ma_fonction(mini, maxi, nbcouples):
     return coordx, coordy
 coordx, coordy = ma_fonction(mini, maxi, nbcouples)
 
-# On initialise les coordonnées initial
+# On initialise les coordonnées initial 
 foodx = []
 foody = []
 # On importe le modue fct_fourmis
@@ -34,7 +34,7 @@ import ant_animate
 # On crée un dictionnaire des fourmis en definissant leurs positions et reserve énergétique
 ants_dict =  {
     0: {
-        'x': [13, 11, 17, 19, 15, 10, 17, 17, 10, 17],
+        'x': [13, 12, 17, 18, 17, 16, 17, 17, 16, 15],
         'y': [4, 4, 3, 3, 4, 5, 5, 5, 5, 6],
         'pv': [20, 18, 16, 14, 12, 10, 8, 7.0, 6.0, 4.0]},
     1: {
@@ -43,19 +43,19 @@ ants_dict =  {
         'pv': [20, 18, 16, 14, 12, 10, 8, 7.0, 6.0, 5.0]},
     2: {
         'x': [13, 13, 14, 14, 14, 14, 14, 14, 15, 16],
-        'y': [6, 5, 5, 6, 5, 6, 7, 7, 7, 7],
+        'y': [4, 5, 5, 6, 5, 6, 6, 7, 6, 7],
         'pv': [20, 18, 16, 14, 12, 10, 8, 7.0, 5.0, 3.0]},
     3: {
         'x': [5, 5, 5, 5, 6, 6, 6, 6, 7, 7],
         'y': [4, 3, 4, 5, 5, 4, 3, 4, 4, 5],
         'pv': [20, 18, 16, 14, 12, 20, 18, 20, 18, 16.0]},
     4: {
-        'x' : [12, 3, 20, 12, 13, 20, 19, 18, 12, 10],
-        'y' : [1, 5, 9, 4, 1, 8, 20, 16, 15, 2],
-        'pv' : [20, 20, 12, 5, 12, 20, 15, 8, 12, 1]},
+        'x' : [12, 13, 13, 12, 13, 14, 15, 14, 13, 12],
+        'y' : [4, 5, 4, 4, 5, 6, 7, 7, 5, 6],
+        'pv' : [20, 20, 1, 5, 12, 20, 15, 8, 12, 1]},
     5 : {
-        'x' : [1, 3, 7, 17, 17, 16, 8, 9, 15, 12],
-        'y' : [20, 20, 6, 7, 10, 15, 8, 5, 6, 4],
+        'x' : [1, 3, 4, 6, 10, 10, 8, 9, 13, 12],
+        'y' : [2, 2, 6, 7, 10, 11, 8, 5, 5, 4],
         'pv' : [15, 3, 7, 17, 20 ,13, 2, 10, 1, 9]}
     }
 # On appelle l'application visual_app du module ant_animate pour afficher le graphique en definissant le parametrage de l'affichache et la valeur énergétique
